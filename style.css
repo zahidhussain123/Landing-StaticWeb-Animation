@@ -1,0 +1,180 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+  body h1 {
+
+	position: absolute;
+	animation: head1 5s linear  forwards;
+}
+
+@keyframes head1 {
+	0% {
+      top: -100px;
+      right:  -250px;
+	}
+
+	100%{
+		top: 10px;
+		left: 40%;
+	}
+}
+
+
+
+
+#header ul {
+	display: flex;
+	list-style: none;
+	position: absolute;
+   width: 30%;
+   	animation: head2 5s linear  forwards;
+}
+
+@keyframes head2 {
+
+	0% {
+      top: -100px;
+      left: -250px;
+	}
+
+	100%{
+		top: 50px;
+		left: 3%;
+	}
+
+}
+
+
+#header ul li {
+	margin-left: 20px;
+	transition: all 1s ease;
+
+}
+
+
+
+
+
+
+
+#header ul li:hover{
+	text-decoration-style: underline;
+	font-size: 20px;
+	background-color: white;
+	color: green;
+	padding: 10px;
+	border-radius: 12px
+}
+
+.web {
+	font-weight: 600;
+	font-size: 30px
+	/*text-align: center;*/
+	margin-right: 10px;
+	position: absolute;
+	animation: web 5s linear forwards;
+}
+@keyframes web {
+
+	0% {
+      top: -100px;
+      left: -250px;
+	}
+
+	100%{
+		top: 150px;
+		left: 41%;
+	}
+
+}
+
+
+#main p{
+	margin-top: 80px;
+	width: 600px;
+	
+	
+	
+	position: absolute;
+	animation: main1 5s linear   forwards;
+}
+
+@keyframes main1 {
+	0%{
+		top: -100px;
+		right: -300px;
+	}
+
+/*	25%{
+		top: 0px;
+		right: 0px;
+	}
+	50%{
+		top: 0px;
+		right: 0px;
+	}
+	75%{
+		top: 0px;
+		right: 0px;
+	}*/
+
+	100%{
+		top: 160px;
+		right: 30%;
+	}
+}
+
+#button .btnn {
+	text-align: center;
+	
+	background-color: pink;
+	width: 10%;
+	padding: 10px;
+	border-radius: 12px;
+	margin-left: 570px;
+	color: black;
+	margin-top: 390px;
+	opacity: 0;
+     transition: all 1s ease;
+	position: absolute;
+	animation: button 5s linear forwards;
+}
+
+@keyframes button {
+
+	0%{
+		top: -100px;
+		right: -300px;
+		opacity: 0;
+	}
+
+	100%{
+		top: 180px;
+		left: 0px;
+
+		opacity: 1;
+		
+	}
+
+}
+
+#button .btnn:hover{
+	background-color: crimson;
+	color: wheat;
+}
+/*#button:hover{
+	background-color: pink;
+	color: black;
+	width: 10%;
+		padding: 10px;
+	border-radius: 12px;
+	margin-left: 600px;
+	height: 20px;
+	margin-top: 350px;
+	opacity: 1;
+	/*transform: rotate(360deg);*/
